@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity_layout)
 
+        Log.d("MainActivity", this.toString())
+
         button1.setOnClickListener {
 //            Toast.makeText(this, "点击啦！", Toast.LENGTH_SHORT).show()
 //            finish()
@@ -41,8 +43,13 @@ class MainActivity : AppCompatActivity() {
 //            intent.putExtra("extra_data", data)
 //            startActivity(intent)
 
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivityForResult(intent, 1)
+//            val intent = Intent(this, SecondActivity::class.java)
+//            startActivityForResult(intent, 1)
+
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+
+            SecondActivity.actionStart(this, "PJHubs", "Hello")
 
         }
 

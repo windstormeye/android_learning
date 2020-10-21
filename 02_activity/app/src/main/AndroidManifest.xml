@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.a02_activity">
 
     <application
@@ -9,11 +10,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.02_activity">
-        <activity android:name=".MainActivity"
+        <activity android:name=".ThirdActivity">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="https"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="com.example.a02_activity.ACTION_START" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.a02_activity.PJ" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
             android:label="Main Activity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"></action>
-                <category android:name="android.intent.category.LAUNCHER"></category>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

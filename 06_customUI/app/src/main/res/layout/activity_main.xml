@@ -17,9 +17,10 @@
 
 
 
-        <include
-            layout="@layout/title"
-            />
+      <com.example.a06_customui.TitleLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
 
     </LinearLayout>
 

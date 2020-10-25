@@ -3,6 +3,7 @@ package com.example.a07_listview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 //        val  adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, datas)
         val adapter = GirlAdapter(this, R.layout.girl_item, girlList)
         listView.adapter = adapter
+        listView.setOnItemClickListener { _, _, position, _ ->
+            val girl = girlList[position]
+            Toast.makeText(this, girl.name, Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun initGirls() {

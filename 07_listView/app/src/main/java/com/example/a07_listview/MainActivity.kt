@@ -28,6 +28,16 @@ class MainActivity : AppCompatActivity() {
             girlList.add(Girl("5号小姐姐", avatar = R.drawable.girl))
             girlList.add(Girl("6号小姐姐", avatar = R.drawable.girl))
             girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+            girlList.add(Girl("7号小姐姐", avatar = R.drawable.girl))
+
         }
     }
 }

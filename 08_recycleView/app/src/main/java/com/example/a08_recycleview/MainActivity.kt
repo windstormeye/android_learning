@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         initGirls()
 
         val layoutManager = LinearLayoutManager(this)
+        layoutManager.orientation = LinearLayoutManager.HORIZONTAL
         recycleView.layoutManager = layoutManager
         val adapter = GirlAdapter(girlList)
         recycleView.adapter = adapter
